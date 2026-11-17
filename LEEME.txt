@@ -1,0 +1,27 @@
+MI RADIO EN VIVO - INSTRUCCIONES
+
+1) PERSONALIZAR
+Abre index.html en VS Code y busca el bloque "CONFIGURACION" (cerca del inicio del script).
+Cambia: nombre, slogan, logo, frecuencia, color, streamUrl, programacion, whatsapp, telefono, correo y redes.
+
+2) EL STREAM (lo mas importante)
+streamUrl es la direccion del audio en vivo de tu radio. La da tu servicio de streaming
+(Icecast, Shoutcast, AzuraCast, Zeno, Radio.co u otro). Debe empezar con https://
+Si empieza con http://, GitHub Pages bloqueara el audio.
+
+3) PROBAR EN TU COMPUTADORA
+Instala la extension "Live Server" en VS Code y pulsa "Go Live".
+
+4) PUBLICAR EN GITHUB PAGES
+- Crea un repositorio Public en github.com.
+- Sube el CONTENIDO de esta carpeta (index.html, manifest.json, service-worker.js, img, android, .github).
+- Settings > Pages > Branch: main, carpeta / (root) > Save.
+- Tu enlace sera https://TU-USUARIO.github.io/NOMBRE-DEL-REPOSITORIO/
+
+5) APK AUTOMATICO (opcional)
+Las carpetas "android" y ".github" hacen que GitHub construya un APK en la pestana Actions.
+Cuando termine, descargalo en "Releases". Si no lo quieres, borra esas dos carpetas.
+
+IMPORTANTE
+- Transmitir musica con derechos de autor requiere las licencias de tu pais.
+- Tu pagina funciona sin cuenta de GitHub para quien la visita.
